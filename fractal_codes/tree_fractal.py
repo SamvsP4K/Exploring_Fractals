@@ -25,12 +25,13 @@ tree = turtle.Turtle()
 tree.hideturtle()
 tree.setheading(90)
 tree.color("green")
+tree.speed("fastest")
 
 build_tree(tree,50,5,30)
 turtle.mainloop()
 
-save_file = turtle.getscreen()
-save_file.getcanvas().postscript(file="../Images/tree_fractal.png")
+turtle.getscreen().getcanvas()
+
 
 
 
